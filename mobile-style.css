@@ -1,0 +1,10 @@
+@media only screen and (max-width: 768px) {
+    header .navbar-brand {
+        padding-right: 1rem;
+    }
+    main img{
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+}

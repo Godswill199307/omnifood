@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>konpay webpage</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=material+icons">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+                list-style-type: none;
+                box-sizing: border-box;
+            }
+            nav {
+                position: fixed;
+                background: crimson;
+                height: 75px;
+                width: 100%;
+                background: crimson 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                opacity: 1;
+            }
+            label .logo img{
+                float: left;
+            }
+            label li {
+                color: #1E1CFF;
+                margin-left: 15%;
+                margin-top: -2.5%; 
+                font-size: 14px;
+            }
+            nav ul {
+                float: right;
+                font-size: 14px;
+                margin-right: 20px;
+                margin-top: -2%;
+                text-transform: uppercase;
+                
+                
+            }
+            nav ul li  {
+                display: inline-block;
+                margin: 0 5px;   
+            }
+            nav ul li a {
+                color: #1E1CFF;
+            }
+            .active {
+                border-bottom: 4px solid #1e1cff;
+            }
+            #sign-up {
+                background: #1e1cff;
+                padding: 8px;
+                border-radius: 7px;
+                border: 1px solid #1e1cff;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #log-in {
+                padding: 8px;
+                border: 1px solid #1e1cff;
+                border-radius: 7px;
+                padding-left: 18px;
+                padding-right: 18px;
+                background: #ffffff; 
+            }
+           
+        </style>
+    </head>
+    <body>
+        <nav class="container">
+            <label class="logo">
+                <img src="Group 1832.png" style="margin-left: 15px; margin-top: 5px;"></div>
+                <li>become our agent</li>
+            </label>
+            <ul>
+                <li><a href="" class="active">home</a>
+                <li><a href="">services</a>
+                <li><a href="">about us</a>
+                <li><a href="">mobile app</a>
+                <li class="support"><a href="">support &amp; faq</a></li>
+                <li><button id="sign-up"><a style="color:white;" href="#">sign up</a></button></li>
+                <li><button id="log-in"><a href="#">log in</a></button></li>
+            </ul>
+        </nav>
+    </body>
+</html>

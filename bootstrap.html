@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap 4 Static Navbar with Dropdown and Search Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://fontawesome.com/v4.7.0/icon/clock-o"></script>
+<script src="https://fontawesome.com/v4.7.0/icon/camera"></script>
+<script src="https://fontawesome.com/v4.7.0/icon/heart"></script>
+<script src="https://fontawesome.com/v4.7.0/icon/eye"></script>
+<style>
+    .bs-example{
+        margin: 40px;
+    }
+    .navbar {
+        background: #706070;
+        border-radius: 10px;
+    }
+    .dropdown-item {
+        background: #706070;
+        color: white;
+    }
+    .progress {
+        width: 40%;
+        margin-left: 40px;
+        border-radius: 20px;
+    }
+    h5 {
+        color: #706070;
+    }
+    input[type="text"] {
+        color: #706070;
+        background-color: black;
+        border: 1px solid #706070;
+    }
+    .form button {
+        background-color: black;
+        border: 1px solid #706070;
+        color: #706070;
+    }
+    .form-group {
+        width: 40%;
+        margin-left: 40px;
+    }
+    .form-check {
+        margin-left: 40px;
+    }
+    .custom-control {
+        margin-left: 40px;
+    }
+    h4 {
+        float: right;
+        margin-right: 35%;
+        margin-top: -12%;
+        font-size: 19px;
+        color: #706070;
+    }
+    .nav {
+        background: green;
+        color: white;
+        padding: 7px;
+        padding-right: 5px;
+        width: 10%;
+        margin-left: 58%;
+        margin-top: -9%;
+        border-radius: 3px;
+    }
+  .navigation {
+      background: #706070;
+      color: white;
+      padding: 3px;
+      /* padding-bottom: -8px; */
+      width: 10%;
+      margin-left: 75%;
+      /* padding-top: 8px; */
+      margin-top: -2.5%;
+      border-radius: 5px;
+      text-align: center;
+  }
+  .pagination a {
+      color: white;
+      float: right;
+      padding: 8px 16px;
+      text-decoration: none;
+      background: darkgrey;
+      border:  1px solid white;
+      
+
+    }
+
+  .pagination a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+ .pagination a:hover:not(.active) {background-color: #ddd;}
+  } 
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <h5>Navbar</h5><br>
+    <nav class="navbar navbar-expand-md">
+        <a href="#" class="navbar-brand" style="color:white; font-size: 27px;">Flat UI</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link" style="color:white">Menu Items</a>
+                <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" style="color:white">Messages</a>
+                <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another Action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                        <a href="#" class="dropdown-item">Seperated link</a>
+                        <a href="#" class="divider"></a>
+                    </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link" style="color:white">About Us</a>
+                </div>
+            </div>
+            <div class="navbar-nav">
+                <form class="form-inline">
+                        <div class="input-group">                    
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-secondary" style="background: black; border: 1px solid #706070; color: #706070;"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </nav><br><br>
+</div>
+</div>
+<h5 style="margin-left: 40px;">Progress bars & slides</h5><br>
+<div class="progress">
+        <div class="progress-bar progress-bar bg-success" role="progressbar"
+        aria-valuenow="40" aria-valuemin="0" aria-valuemax="40" style="width:40%">
+        </div>
+      </div><br>
+      <div class="progress">
+        <div class="progress-bar progress-bar bg-success" role="progressbar" style="width:40%">
+        </div>
+        <div class="progress-bar progress-bar bg-warning" role="progressbar" style="width:10%">
+        </div>
+        <div class="progress-bar progress-bar bg-danger" role="progressbar" style="width:10%">
+        </div>
+        <div class="progress-bar progress-bar bg-success" role="progressbar" style="width:10%">
+        </div>
+        <div class="progress-bar progress-bar bg-info" role="progressbar" style="width:10%">
+        </div>
+        </div><br>
+        <form>
+        <div class="form-group">
+            <input type="range" class="form-control-range" id="formControlRange">
+        </div>
+</form>
+<h4>Navigation</h4>
+<div class="nav">
+<i class="fa fa-clock-o" aria-hidden="true" style="margin-left: 4%;margin-right: 12%;"></i>
+<i class="fa fa-camera" aria-hidden="true" style="margin-right: 12%;"></i>
+<i class="fa fa-heart" aria-hidden="true" style="margin-right: 12%;"></i>
+<i class="fa fa-eye" aria-hidden="true"></i>
+</div>
+<div class="navigation">
+  <p> All Messages </p>
+</div>
+<div class="pagination">
+  <a href="#">&lt;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&gt;</a>
+</div>
+
+        <!-- <h5 style="margin-left: 40px;">checkboxes</h5>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+             unchecked
+            </label>
+        </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="defaultChecked2" checked>
+            <label class="custom-control-label" for="defaultChecked2">checked</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" disabled>
+            <label class="form-check-label" for="defaultCheck1">
+              Disabled unchecked
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+            <label class="form-check-label" for="defaultCheck2">
+              Disabled checked
+            </label>
+          </div>
+          <h4>Radio Buttons</h4> -->
+          <!-- Default unchecked -->
+        <!-- <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+            <label class="custom-control-label" for="defaultUnchecked" style="margin-top: -120%;">Radio is off</label>
+        </div> -->
+  
+        <!-- Default checked -->
+        <!-- <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+            <label class="custom-control-label" for="defaultChecked" style="margin-top: -125%;">Radio is on</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked disabled>
+            <label class="custom-control-label" for="defaultChecked" style="margin-left: 45%; margin-top: -70%;">Disabled radio is off</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked disabled>
+            <label class="custom-control-label" for="defaultChecked" style="margin-left:45%; margin-top: -55%;">Disabled radio is on</label> -->
+</body>
+</html>
+            

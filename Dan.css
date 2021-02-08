@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+img {
+    color: brown;
+    height: 10vh;
+}
+li {
+    float: right;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(Rectangle\ 69.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    /* background: url("Rectangle\ 69.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh; */
+}
