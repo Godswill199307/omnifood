@@ -1,252 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Bootstrap 4 Static Navbar with Dropdown and Search Form</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script src="https://fontawesome.com/v4.7.0/icon/clock-o"></script>
-<script src="https://fontawesome.com/v4.7.0/icon/camera"></script>
-<script src="https://fontawesome.com/v4.7.0/icon/heart"></script>
-<script src="https://fontawesome.com/v4.7.0/icon/eye"></script>
-</head>
-<style>
-    .bs-example{
-        margin: 40px;
-    }
-    .navbar {
-        background: #706070;
-        border-radius: 10px;
-    }
-    .dropdown-item {
-        background: #706070;
-        color: white;
-    }
-    .progress {
-        width: 70%;
-        margin-left: 40px;
-        border-radius: 20px;
-    }
-    h5 {
-        color: #706070;
-    }
-    input[type="text"] {
-        color: #706070;
-        background-color: black;
-        border: 1px solid #706070;
-    }
-    .form button {
-        background-color: black;
-        border: 1px solid #706070;
-        color: #706070;
-    }
-    .form-group {
-        width: 70%;
-        margin-left: 40px;
-    }
-    .form-check {
-        /* margin-left: 40px; */
-    }
-    .custom-control {
-        /* margin-left: 40px; */
-    }
-    h4 {
-        float: right;
-        margin-right: 86.4%;
-        margin-top: 1%;
-        font-size: 19px;
-        color: #706070;
-    }
-    .nav {
-        background: green;
-        color: white;
-        padding: 8px;
-        padding-right: 5px;
-        width: 25%;
-        /* margin-left: 58%; */
-        margin-top: 9%;
-        border-radius: 3px;
-    }
-  .navigation {
-      background: #706070;
-      color: white;
-      float: right;
-      padding: -1px;
-      /* padding-top: 1px; */
-      margin-right: 36%;
-      padding-bottom: -1px;
-      width: 23%;
-      /* margin-left: 75%; */
-      /* padding-top: 8px; */
-      margin-top: -5%;
-      border-radius: 5px;
-      text-align: center;
-  }
-  .pagination a {
-      color: white;
-      float: right;
-      padding: 8px 16px;
-      text-decoration: none;
-      background: darkgrey;
-      border:  1px solid white;
-      margin-top: 7%;
-    }
+    <head>
 
-  .pagination a.active {
-      background-color: dodgerblue;
-      color: white;
-    }
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</style>
-<body>
-<div class="bs-example">
-    <h5>Navbar</h5><br>
-    <nav class="navbar navbar-expand-md">
-        <a href="#" class="navbar-brand" style="color:white; font-size: 27px;">Flat UI</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link" style="color:white">Menu Items</a>
-                <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" style="color:white">Messages</a>
-                <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Action</a>
-                        <a href="#" class="dropdown-item">Another Action</a>
-                        <a href="#" class="dropdown-item">Something else here</a>
-                        <a href="#" class="dropdown-item">Seperated link</a>
-                        <a href="#" class="divider"></a>
-                    </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link" style="color:white">About Us</a>
-                </div>
-            </div>
-            <div class="navbar-nav">
-                <form class="form-inline">
-                        <div class="input-group">                    
-                            <input type="text" class="form-control" placeholder="Search">
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-secondary" style="background: black; border: 1px solid #706070; color: #706070;"><i class="fa fa-search"></i></button>
-                            </div>
-                        </div>
-                    </form>
-            </div>
-        </div>
-    </nav><br><br>
-</div>
-</div>
-<main>
-    <div class="row">
-
-        <div class="col-lg-6">
-                <h5 style="margin-left: 40px;">Progress bars & slides</h5><br>
-                <div class="progress">
-                        <div class="progress-bar progress-bar bg-success" role="progressbar"
-                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="40" style="width:40%">
-                        </div>
-                      </div><br>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar bg-success" role="progressbar" style="width:40%">
-                        </div>
-                        <div class="progress-bar progress-bar bg-warning" role="progressbar" style="width:10%">
-                        </div>
-                        <div class="progress-bar progress-bar bg-danger" role="progressbar" style="width:10%">
-                        </div>
-                        <div class="progress-bar progress-bar bg-success" role="progressbar" style="width:10%">
-                        </div>
-                        <div class="progress-bar progress-bar bg-info" role="progressbar" style="width:10%">
-                        </div>
-                        </div><br>
-                        <form>
-                        <div class="form-group">
-                            <input type="range" class="form-control-range" id="formControlRange">
-                        </div>  
-               </ul>
-            </div>
-        <div class="col-lg-6">
-                <h4>Navigation</h4>
-                <div class="nav">
-                <i class="fa fa-clock-o" aria-hidden="true" style="margin-left: 8%;margin-right: 12%;"></i>
-                <i class="fa fa-camera" aria-hidden="true" style="margin-right: 12%;"></i>
-                <i class="fa fa-heart" aria-hidden="true" style="margin-right: 12%;"></i>
-                <i class="fa fa-eye" aria-hidden="true"></i>
-                </div>
-                <div class="navigation">
-                  
-                  <p> <a href="#"style="color: white;text-decoration: none;"><b>&lt;</b></a> All Messages <a href="#"style="color: white;text-decoration: none;"><b>&gt;</b></a> </p>
-                  
-                </div>
-                <div class="pagination">
-                  <a href="#">&lt;</a>
-                  <a class="active" href="#">1</a>
-                  <a href="#">2</a>
-                  <a href="#">3</a>
-                  <a href="#">4</a>
-                  <a href="#">5</a>
-                  <a href="#">6</a>
-                  <a href="#">7</a>
-                  <a href="#">8</a>
-                  <a href="#">&gt;</a>
-                </div>
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+        <link rel="stylesheet" type="text/css" href="ionicons.min.css">
+        <link href="https://ionicons.com/">
+        <link rel="stylesheet" type="text/css" href="Gabs.css">
+        <link rel="stylesheet" type="text/css" href="queries.css">
+        <!-- <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link href="http://fonts.googleapis.com/css?family=lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+        <title>learning html</title>
+    </head> 
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="omnifood logo.png" alt="omnifood logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#">Food delivery</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Our cities</a></li>
+                        <li><a href="#">Sign up</a></li>
                     </ul>
                 </div>
-        </div>
-    </div>
-    <div class="row container">
-        <div class="col-xl-3  col-lg-3  col-md-3">
-                <h5 style="margin-left: 40px;">checkboxes</h5>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-            <label class="form-check-label" for="defaultCheck2">
-             unchecked
-            </label>
-        </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="defaultChecked2" checked>
-            <label class="custom-control-label" for="defaultChecked2">checked</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" disabled>
-            <label class="form-check-label" for="defaultCheck1">
-              Disabled unchecked
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-            <label class="form-check-label" for="defaultCheck2">
-              Disabled checked
-            </label>
-          </div>
-
-          <div class="row container">
-            <div class="col-xl-3  col-lg-3  col-md-3">
-                    <h5 style="margin-left: 40px;">checkboxes</h5>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">
-                 unchecked
-                </label>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
+                <a class="btn btn-full" href="#">I'm hungry</a>
+                <a class="btn btn-ghost" href="#">Show me more</a>
             </div>
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultChecked2" checked>
-                <label class="custom-control-label" for="defaultChecked2">checked</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" disabled>
-                <label class="form-check-label" for="defaultCheck1">
-                  Disabled unchecked
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-                <label class="form-check-label" for="defaultCheck2">
-                  Disabled checked
-                </label>
-              </div>
-              
-        </main>
+
+        </header>
+        <section class="section-features">
+            <div class="row">
+                <h2>Got food fast &mdash; not fast food</h2>
+                <p class="long-copy">
+                Hello, we're omifood, your new premium food delivery service. We know you're always busy. no time for cooking. so let us take care of that, we're really good at it, we promise!
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                    <h3>Up to 365 days/year</h3>
+                    <p>
+                        Never cook again! We really mean that. Our subscribtion plans include up to 365 days/year coverage. you can also choose to order more flexibly if that's your style.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>
+                        You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition-outline icon-big"></i>
+                    <h3>100% organic</h3>
+                    <p>
+                        All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                    <h3>Order anything</h3>
+                    <p>
+                        We don't limit your creativity, which means you can order whatever you feel like. you can also choose from our menu containing over 100 delicious meals. it's up to you!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-meals">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                       <img src="img9.jpg" alt="Korean bibinbap with egg and vegetables"> 
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="img2.jpg" alt="Simple italian pizza with cherry tomatoes"> 
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="img3.jpg" alt="chicken breast steak with vegetables"> 
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="img4.jpg" alt="Autumn pumpkin soup"> 
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase clearfix">
+                    <li>
+                        <figure class="meal-photo">
+                           <img src="img5.jpg" alt="Paleo beef steak with vegetables"> 
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img6.jpg" alt="Burger with cheddar and bacon"> 
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img7.jpg" alt="chicken breast steak with vegetables"> 
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img8.jpg" alt="Granola with cherries and strawberries"> 
+                        </figure>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="section-steps">
+            <div class="row">
+                <h2>How it works &mdash; simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <img src="omni iphone.jpg" alt="omnifood app on iphone" class="app-screen">
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="works-step">
+                        <div>1</div>
+                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>2</div>
+                        <p>Order your delicious meal using our mobile app or website. or you can call us!</p>
+                    </div>
+                    <div class="works-step">
+                        <div>3</div>
+                        <p>Enjoy your meal after less than 20 minutes. see you the next time!</p>
+                    </div>
+
+                    <a href="#" class="btn-app"><img src="app store.png" alt="app store button"></a>
+                    <a href="#" class="btn-app"><img src="google play.png" alt="google play button"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cities">
+            <div class="row">
+                <h2>We're currently in these cities</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <img src="omni img2.jpg" alt="lisbon">
+                    <h3>Lisbon</h3>
+                    <div class="city-feature">
+                            <i class="ion-ios-person icon-small"></i>
+                            1600+ happy eaters 
+                    </div>
+                    <div class="city-feature">
+                            <i class="ion-ios-star icon-small"></i>
+                            60+ top chefs 
+                    </div>
+                    <div class="city-feature">
+                            <i class="ion-social-twitter icon-small"></i>
+                            <a href="#">@omnifood_lx</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                        <img src="omni img4.jpg" alt="San francisco">
+                        <h3>San francisco</h3>
+                        <div class="city-feature">
+                                <i class="ion-ios-person icon-small"></i>
+                                3700+ happy eaters 
+                        </div>
+                        <div class="city-feature">
+                                <i class="ion-ios-star icon-small"></i>
+                                160+ top chefs 
+                        </div>
+                        <div class="city-feature">
+                                <i class="ion-social-twitter icon-small"></i>
+                                <a href="#">@omnifood_sf</a>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-4 box">
+                            <img src="omni img1.jpg" alt="Berlin">
+                            <h3>Berlin</h3>
+                            <div class="city-feature">
+                                    <i class="ion-ios-person icon-small"></i>
+                                    2300+ happy eaters 
+                            </div>
+                            <div class="city-feature">
+                                    <i class="ion-ios-star icon-small"></i>
+                                    118+ top chefs 
+                            </div>
+                            <div class="city-feature">
+                                    <i class="ion-social-twitter icon-small"></i>
+                                    <a href="#">@omnifood_berlin</a> 
+                            </div>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                                <img src="omni img3.jpg" alt="London">
+                                <h3>London</h3>
+                                <div class="city-feature">
+                                        <i class="ion-ios-person icon-small"></i>
+                                        1200+ happy eaters 
+                                </div>
+                                <div class="city-feature">
+                                        <i class="ion-ios-star icon-small"></i>
+                                         50+ top chefs 
+                                </div>
+                                <div class="city-feature">
+                                        <i class="ion-social-twitter icon-small"></i>
+                                        <a href="#">@omnifood_london</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-testimonials">
+                        <div class="row">
+                            <h2>Our customers can't live without us</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <blockquote>
+                                    Omnifood is just awesome: I just launched a startup which leaves us with no time for cooking, so omnifood is a live saver. Now that i got used to it, i couldn't live without my daily meals!
+                                    <cite><img src="customer1.jpg">Alberto Duncan</cite>
+                                </blockquote>
+                            </div>
+                        <div class="col span-1-of-3">
+                                <blockquote>
+                                      Inexpensive, healthy and great-tasting meals, delivered right to any home. We have lots of food delivery here in lisban, but no one comes even close to omnifood. Me and my family are so in love!
+                                    <cite><img src="customer3.jpg">Joana Silva</cite>
+                                </blockquote>
+                        </div>
+                        <div class="col span-1-of-3">
+                                <blockquote>
+                                    I was looking for a quick and easy food delivery service in San francisco. I tried a lot of them and ended up with omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                                    <cite><img src="customer2.jpg">Hilton Chapman</cite>
+                                </blockquote>
+                        </div>
+                    </div>
+                    </section>
+
+                    <section class="section-plans">
+                        <div class="row">
+                            <h2>Start eating healthy today</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <div class="plan-box">
+                                   <div>
+                                        <h3>Premium</h3>
+                                        <p class="plan-price">$399 <span>/ month</span></p>
+                                        <p class="plan-price-meal">That's only 13.30$ per meal</p>
+                                   </div>
+                                   <div>
+                                        <ul>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                                        </ul>
+                                   </div>
+                                   <div>
+                                        <a href="#" class="btn btn-full">Sign up now</a>
+                                   </div> 
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <div class="plan-box">
+                                    <div>
+                                        <h3>Pro</h3>
+                                        <p class="plan-price">$149 <span>/ month</span></p>
+                                        <p class="plan-price-meal">That's only 14.90$ per meal</p>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month</li>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-ghost">Sign up now</a>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <div class="plan-box">
+                                    <div>
+                                        <h3>Starter</h3>
+                                        <p class="plan-price">19$ <span>/ meal</span></p>
+                                        <p class="plan-price-meal">&nbsp;</p>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8 am to 12 pm</li>
+                                            <li><i class="ion-ios-close-empty icon-small"></i></li>
+                                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-ghost">Sign up now</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-form">
+                        <div class="row">
+                            <h2>We're happy to hear from you</h2>
+                        </div>
+                        <div class="row">
+                            <form method="post" action="#" class="contact-form">
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                        <form method="post" action="#" class="contact-form">
+                                            <div class="row">
+                                                <div class="col span-1-of-3">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                                <div class="col span-2-of-3">
+                                                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                    <form method="post" action="#" class="contact-form">
+                                                        <div class="row">
+                                                            <div class="col span-1-of-3">
+                                                                <label for="find-us">How did you find us?</label>
+                                                            </div>
+                                                            <div class="col span-2-of-3">
+                                                                <select name="find-us" id="find-us">
+                                                                    <option value="friends" selected>Friends</option>
+                                                                    <option value="Search">Search engine</option>
+                                                                    <option value="ad">Advertisement</option>
+                                                                    <option value="other">Other</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                                <form method="post" action="#" class="contact-form">
+                                                                    <div class="row">
+                                                                        <div class="col span-1-of-3">
+                                                                            <label>Newsletter</label>
+                                                                        </div>
+                                                                        <div class="col span-2-of-3">
+                                                                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                            <form method="post" action="#" class="contact-form">
+                                                                                <div class="row">
+                                                                                    <div class="col span-1-of-3">
+                                                                                        <label>Drop us a line</label>
+                                                                                    </div>
+                                                                                    <div class="col span-2-of-3">
+                                                                                        <textarea name="message" placeholder="Your message"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                        <form method="post" action="#" class="contact-form">
+                                                                                            <div class="row">
+                                                                                                <div class="col span-1-of-3">
+                                                                                                    <label>&nbsp;</label>
+                                                                                                </div>
+                                                                                                <div class="col span-2-of-3">
+                                                                                                    <input type="submit" value="Send it!"> 
+                                                                                                </div>
+                                                                                            </div>
+                            </form>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <div class="row">
+                            <div class="col span-1-of-2">
+                                <ul class="footer-nav">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">IOS App</a></li>
+                                    <li><a href="#">Android App</a></li>
+                                </ul>
+                            </div>
+                        <div class="col span-1-of-2">
+                            <ul class="social-links">
+                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                                <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <p>
+                                copyright &copy; 2015 by omnifood. All rights reserved.
+                            </p>
+                        </div>
+                    </footer>
+
+
+    </body>
+</html>
